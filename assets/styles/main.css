@@ -101,10 +101,29 @@ body {
   line-height: 1.625;
 }
 
+/* Layout Styles */
+.hero {
+  padding: 2.5rem 1.5rem 10.38rem;
+  position: relative;
+}
+.logo {
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  margin-bottom: 1.25rem;
+}
+
+.background-pattern-1 {
+  display: none;
+  background: url("../bg-pattern-1.svg");
+  background-size: cover;
+}
+
 /*=========================================  Media Queries ============================*/
 
 /* For Tablet Screens */
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 50em) {
   .heading-primary {
     font-size: 4rem;
     line-height: 1;
@@ -114,11 +133,32 @@ body {
     font-size: 1.125rem;
     line-height: 1.55556;
   }
+
+  .background-pattern-1 {
+    display: block;
+    position: absolute;
+    width: 16.67rem;
+    height: 25rem;
+    top: -2rem;
+    right: -2.25rem;
+    z-index: 5;
+  }
+  .hero {
+    padding: 3.87rem 2.45rem 15.56rem;
+  }
+  .logo {
+    margin-bottom: 5.94rem;
+  }
+  .hero h1 {
+    margin-bottom: 1.75rem;
+  }
+  .hero p {
+  }
 }
 
 /* For Desktop Screens */
 
-@media screen and (min-width: 90em) {
+@media screen and (min-width: 75em) {
   .heading-primary {
     font-size: 5.5rem;
     letter-spacing: -0.0625rem;
@@ -136,4 +176,21 @@ body {
     font-weight: 700;
     line-height: 1.3;
   }
+  .background-pattern-1 {
+    width: 19.5rem;
+    height: 29.25rem;
+    top: -2.5rem;
+    right: 0;
+  }
+  .hero {
+    padding: 3.87rem 10rem 20rem;
+  }
+  .hero h1 {
+    margin-bottom: 2.5rem;
+    /* max-width: 64rem; */
+  }
+
+  /* .hero p {
+    max-width: 52rem;
+  } */
 }
